@@ -15,7 +15,7 @@ public class Conta {
     
     public boolean aplicarTransacao(Transacao tr){
         
-        System.out.println(tr.valor);
+        //System.out.println(tr.valor);
         
         if(tr.validar(donoDaConta)){
             if(tr.tipo == 1){//Debito 
