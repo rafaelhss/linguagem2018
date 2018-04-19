@@ -38,9 +38,6 @@ public class Banco {
         corre1.conta2.aplicarTransacao(tx1);
        
         System.out.println("Saldo 2 da Maria:" + corre1.conta2.saldo);
-       
-        
-              
         
     }
     
