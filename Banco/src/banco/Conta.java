@@ -30,4 +30,26 @@ public class Conta {
         }
         return false;
     }
+    
+    public void investirPoupanca(float valor, int meses){
+        if(valor <= saldo ){
+            Investimento inv = new Investimento();
+            inv.rentabilidade = (float)1.005;
+            inv.valorMinimo = 0;
+            saldo = saldo - valor;
+            saldo = saldo + inv.aplicar(valor, meses);
+        }
+    }
+    
+    public void investirTesouro(float valor, int meses){
+        if(valor <= saldo ){
+            Investimento inv = new Investimento();
+            inv.rentabilidade = (float)1.01;
+            inv.valorMinimo = 200;
+            saldo = saldo - valor;
+            saldo = saldo + inv.aplicar(valor, meses);
+        }
+    }
+    
+    
 }

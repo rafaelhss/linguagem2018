@@ -62,6 +62,14 @@ public class Banco {
         System.out.println("Saldo 2 da Rosa:" + corre2.conta2.saldo);
         System.out.println("Saldo total da Rosa:" + corre2.saldoTotal());
         
+        System.out.println("Saldo da conta 1 da rosa apos 12 meses de 100 reais na poupanca");
+        corre2.conta1.investirPoupanca(100, 12);
+        System.out.println(corre2.conta1.saldo);
+        
+        System.out.println("Saldo da conta 2 da rosa apos 12 meses de 100 reais na poupanca");
+        corre2.conta2.investirPoupanca(100, 12);
+        System.out.println(corre2.conta2.saldo);
+       
     }
     
 }
