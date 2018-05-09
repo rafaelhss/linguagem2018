@@ -1,0 +1,128 @@
+Questao OO
+
+Objeto Pizza
++ massa
++ recheio
++ tamanho
++ calcularPreco()
+	> preco base = 10 reais
+	> Tamanhho G = 20% mais caro
+	> Dia do mes +20 = 50% desconto
+	> como descobrir o dia do mes
+	    Calendar cal = Calendar.getInstance();
+        int dayOfMonth = cal.get(Calendar.DAY_OF_MONTH);
+
+Objeto Pizzaiolo
++ fazerPizza(Pizza)
+	> Escreve: Saindo uma pizza [tamanho] de [recheio] com massa [massa]! 
+	Favor pagar [preco]
+	> Se for mais de meia noite nao faz!
+	> como descobrir a hora
+		Calendar calendar = Calendar.getInstance();
+		int hours = calendar.get(Calendar.HOUR_OF_DAY);
+			
+
+
+
+
+
+public static void main(String[] args) {
+	int N;
+	Scanner input =new Scanner(System.in);
+	N =input.nextInt();
+	
+	
+	for (int i = 2; i <= N; i = i + 2) {
+		System.out.print(i+"^2 = "+(i*i)+"\n");
+	}
+}
+
+
+
+public static void main(String[] args) {
+	int X, Y, total = 0;
+	Scanner input =new Scanner(System.in);
+	X = input.nextInt();
+	Y = input.nextInt();
+	
+	if (X > Y) {
+		for (int i = X - 1; i > Y; i--) {
+			if (i % 2 != 0) {
+				total += i;
+			}
+		}
+	}else {
+		for (int i = Y - 1; i > X; i--) {
+			if (i % 2 != 0) {
+				total += i;
+			}
+		}
+	}
+	
+	System.out.print(total+"\n");
+}
+
+
+	public static void main(String[] args) {
+		int X ,Y ;
+		
+		Scanner input =new Scanner(System.in);
+
+		do {
+			
+			X = input.nextInt();
+			Y = input.nextInt();
+			if (X > Y) {
+				System.out.print("Decrescente\n");
+			}else if (X < Y) {
+				System.out.print("Crescente\n");
+			}
+		} while (X != Y);
+
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		int X, Y;
+		Scanner input =new Scanner(System.in);
+		X = input.nextInt();
+		Y = input.nextInt();
+		if (X > Y) {
+			int total = 0;
+			for (int i = Y; i <= X; i++) {
+				if (i % 13 != 0) {
+					total +=i;
+				}
+			}
+			System.out.print(total+"\n");
+		}else if(X < Y){
+			int total2 = 0;
+			for (int i = X; i <= Y; i++) {
+				if (i % 13 != 0) {
+					total2 +=i;
+				}
+			}
+
+			System.out.print(total2+"\n");
+		}
+		
+	}
+
+	
+	public static void main(String[] args) {
+
+		int X;
+		Scanner input =new Scanner(System.in);
+		while ((X = input.nextInt()) != 0) {
+			for (int i = 1; i <= X; i++) {
+				if (i == X) {
+					System.out.print(i+"\n");
+				}else {
+					System.out.print(i+" ");
+				}
+				
+			}
+		}
+	}
+	
