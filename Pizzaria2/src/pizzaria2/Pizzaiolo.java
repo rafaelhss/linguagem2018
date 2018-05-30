@@ -20,11 +20,11 @@ public class Pizzaiolo {
         int hours = calendar.get(Calendar.HOUR_OF_DAY);
         
         if(hours >= 18 && hours <= 23 ){
-        
+        /*
             System.out.println("Saindo uma"
                     + "pizza de tamanho " + pitssa.tamanho 
                     + " de " + pitssa.recheio 
-                    + " com massa " + pitssa.massa);
+                    + " com massa " + pitssa.massa);*/
             System.out.println("Favor pagar R$ " 
                     + pitssa.calcularPreco());
         } else {

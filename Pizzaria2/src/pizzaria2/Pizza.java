@@ -11,10 +11,10 @@ import java.util.Calendar;
  *
  * @author Rafael.Soares
  */
-public class Pizza {
-    public String recheio;
-    public String massa;
+public abstract class Pizza {
     public String tamanho;
+    
+    public abstract void preparar();
     
     public float calcularPreco(){
         float preco = 10;

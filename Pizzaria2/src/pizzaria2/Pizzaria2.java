@@ -19,38 +19,51 @@ public class Pizzaria2 {
      */
     public static void main(String[] args) {
         
-        String resposta = "s";
         
-        ArrayList<Pizza> pizzas = new ArrayList<>();
+        Pizza pAtum = new PizzaAtum();
+        pAtum.preparar();
+        pAtum.calcularPreco();
+                
+        pAtum = new PizzaAtumPremium();
+        pAtum.preparar();
+              
+                
+                
         
-        while(resposta.equals("s")){
-            Pizza p = new Pizza();
-
-            System.out.println("Digite o tamanho da pizza");
-            Scanner sc = new Scanner(System.in);
-
-            p.tamanho = sc.nextLine();
-
-            System.out.println("Digite o recheio");
-            p.recheio = sc.nextLine();
-
-            System.out.println("Digite a massa");
-            p.massa = sc.nextLine();
-            
-            
-            pizzas.add(p);
-
-            System.out.println("Sua pizza sera preparada.");
-            System.out.println("Quer add outra pizza?");
-            resposta = sc.nextLine();
-        }
         
-        Pizzaiolo antonio = new Pizzaiolo();
-        for(Pizza pit : pizzas)
-        {
-            antonio.fazerPizza(pit);
-        }
         
+//        String resposta = "s";
+//        
+//        ArrayList<Pizza> pizzas = new ArrayList<>();
+//        
+//        while(resposta.equals("s")){
+//          /*  Pizza p = new Pizza();
+//
+//            System.out.println("Digite o tamanho da pizza");
+//            Scanner sc = new Scanner(System.in);
+//
+//            p.tamanho = sc.nextLine();
+//
+//            System.out.println("Digite o recheio");
+//            p.recheio = sc.nextLine();
+//
+//            System.out.println("Digite a massa");
+//            p.massa = sc.nextLine();
+//            
+//            
+//            pizzas.add(p);
+//
+//            System.out.println("Sua pizza sera preparada.");
+//            System.out.println("Quer add outra pizza?");
+//            resposta = sc.nextLine();*/
+//        }
+//        
+//        Pizzaiolo antonio = new Pizzaiolo();
+//        for(Pizza pit : pizzas)
+//        {
+//            antonio.fazerPizza(pit);
+//        }
+//        
         
         
     }
