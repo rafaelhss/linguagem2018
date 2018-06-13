@@ -1,0 +1,79 @@
+Avaliação Final de Linguagem
+
+1 - Uma classe abstrata chamada 'Texto' possui um método publico 'converter' que recebe uma String e devolve um inteiro correspondente ao numero de caracteres que essa String possui. Uma classe chamada 'Portugues' estende (usando o comando extends) a classe Texto. Nesse caso:
+
+a) A classe português não pode executar o metodo 'converter' da classe ancestral
+b) A classe Portugues é obrigada a dar uma implementação para o metodo 'converter' da classe ancestral antes de executa-lo.
+c) A classe Portugues pode pode executar o metodo 'converter' da classe ancestral
+d) Esse codigo não compilaria.
+
+2 - Uma interface chamada 'Texto' possui um método publico 'converter' que recebe uma String e devolve um inteiro correspondente ao numero de caracteres que essa String possui. Uma classe chamada 'Portugues' estende (usando o comando extends) a interface Texto. Nesse caso:
+
+a) A classe português não pode executar o metodo 'converter' da classe ancestral
+b) A classe Portugues é obrigada a dar uma implementação para o metodo 'converter' da classe ancestral antes de executa-lo.
+c) A classe Portugues pode pode executar o metodo 'converter' da classe ancestral
+d) Esse codigo não compilaria.
+
+3 - Uma interface chamada 'Texto' possui um método publico 'converter' que recebe uma String e devolve um inteiro. Não há implementação desse método, apenas assinatura. Uma classe chamada 'Portugues' estende (usando o comando extends) a interface Texto. Nesse caso:
+
+a) A classe português não pode executar o metodo 'converter' da classe ancestral
+b) A classe Portugues é obrigada a dar uma implementação para o metodo 'converter' da classe ancestral antes de executa-lo.
+c) A classe Portugues pode pode executar o metodo 'converter' da classe ancestral
+d) Esse codigo não compilaria.
+  
+4 - Uma interface chamada 'Texto' possui um método publico 'converter' que recebe uma String e devolve um inteiro. Não há implementação desse método, apenas assinatura. Uma classe chamada 'Portugues' implementa (usando o comando implements) a interface Texto. Nesse caso:
+
+a) A classe português não pode executar o metodo 'converter' da classe ancestral
+b) A classe Portugues é obrigada a dar uma implementação para o metodo 'converter' da classe ancestral antes de executa-lo.
+c) A classe Portugues pode pode executar o metodo 'converter' da classe ancestral
+d) Esse codigo não compilaria.
+  
+5 - observe o codigo a seguir e assinale a alternativa correta:
+
+	HashMap<Integer, Estado> estados = new HashMap<Integer, Estado>();
+    
+	Estado e = estados.get(user_id);
+	if (e == null){
+		e = new EstadoInicial(context, c);
+	}
+	e.processaTexto(mensagem);
+	
+	estados.put(user_id, e.getProximoEstado());
+
+	
+a) O comando 'estados.get(user_id)' retorna a instancia de uma interface chamada Estado.
+b) Podemos afirmar que EstadoInicial é uma classe abstrata que estende a classe Estado.
+c) Para que esse código funcione corretamente a classe Estado precisa apresentar a implementação do metodo processaTexto
+d) Podemos afirmar sem nenhuma dúvida que 'e.getProximoEstado()' retorna uma instancia de um Estado ou de uma classe cujo ancestral seja Estado	
+
+
+6 - observe o codigo a seguir e assinale a alternativa correta:
+
+	public static void main(String[] args){
+		mensagem(16);
+	}
+	
+	public static int calcula(int param){
+		return param/2;
+	}
+	
+	public static void mensagem(int param){
+		if(param > 2){
+			mensagem(calcula(param));
+		}
+		System.out.println("Ola");
+	}
+
+a) A palavra 'Ola' sera exibida 16 vezes
+b) A palavra 'Ola' sera exibida 8 vezes
+c) A palavra 'Ola' sera exibida 4 vezes
+d) O Codigo nao compilaria.	
+
+
+7 - Sobre herança podemos afirmar que:
+
+a) Quando uma classe estende (extends) a outra ele recebe todos os atributos e os valores desses atributos da classe ancestral
+b) Quando uma classe implementa (implements) a outra ela recebe apenas os métodos do ancestral
+c) A diferença entre extends e implements é que com o primeiro a classe filha pode receber metodos com codigo implementado enquanto que no segundo ela sempre vai herdar apenas as assinaturas dos métodos, sendo obrigada a implementá-los.
+d) Em java a hierarquia de classes está limitada a apenas um nível, ou seja, Se A herda de B, então B é uma classe do tipo final, da qual nenhuma outra classe poderá herdar.
+    
